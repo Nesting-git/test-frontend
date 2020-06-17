@@ -71,6 +71,29 @@ $(document).ready(function () {
         dots: true,
         slidesToShow: 4,
         slidesToScroll: 4,
+        responsive:[
+            {
+                breakpoint: 1160,
+                settings:{
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    }
+            },
+            {
+                breakpoint: 900,
+                settings:{
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    }
+            },
+            {
+                breakpoint: 600,
+                settings:{
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    }
+            },
+        ]
     });
 
     $('.slider-summer').slick({
@@ -85,6 +108,36 @@ $(document).ready(function () {
         dots: true,
         slidesToShow: 5,
         slidesToScroll: 5,
+        responsive:[
+            {
+                breakpoint: 1080,
+                settings:{
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    }
+            },
+            {
+                breakpoint: 900,
+                settings:{
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    }
+            },
+            {
+                breakpoint: 650,
+                settings:{
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    }
+            },
+            {
+                breakpoint: 440,
+                settings:{
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    }
+            },
+        ]
     });
 
     $('.slider-stones').slick({
@@ -92,6 +145,32 @@ $(document).ready(function () {
         dots: false,
         slidesToShow: 5,
         slidesToScroll: 1,
+        responsive:[
+            {
+                breakpoint: 900,
+                settings:{
+                    slidesToShow: 4,
+                    }
+            },
+            {
+                breakpoint: 768,
+                settings:{
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings:{
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 400,
+                settings:{
+                    slidesToShow: 1,
+                }
+            },
+        ]   
     });
 
     $('.slider-new').slick({
@@ -110,7 +189,15 @@ $(document).ready(function () {
         asNavFor: '.slider-new',
         focusOnSelect: true,
         arrows: false,
-        // draggable: false,
+        responsive:[
+            {
+                breakpoint: 600,
+                settings:{
+                    vertical: true,
+                    variableWidth: true,
+                }
+            },
+        ]
     });
 
     $('.mega-item').slick({
@@ -118,6 +205,26 @@ $(document).ready(function () {
         dots: false,
         slidesToShow: 4,
         slidesToScroll: 1,
+        responsive:[
+            {
+                breakpoint: 1260,
+                settings:{
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 900,
+                settings:{
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings:{
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
     $('.new__navbar').on('afterChange', function (event, slick, currentSlide, nextSlide) {
@@ -204,5 +311,18 @@ $(document).ready(function () {
           $(".mob-menu").text("Меню");
         }   
      });
+
+
+     
+    let mql = window.matchMedia('all and (max-width: 900px)');
+    if (mql.matches) {
+        // Перемещаем параграф из product__title в mob-title
+    $('.mob-title').append( $('.product__title') );
+    } else {
+        // нет, размер окна более 479px 
+    }
+    
+
+
 
 });
