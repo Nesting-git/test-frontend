@@ -1617,7 +1617,6 @@ section {
 
 .section-paralax {
   position: relative;
-  background-position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.96);
