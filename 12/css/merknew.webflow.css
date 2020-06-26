@@ -2600,6 +2600,10 @@ body {
   height: 490px;
 }
 
+.seo-column-result-text_center {
+  text-align: center;
+}
+
 .seo-project-info-box {
   display: -webkit-box;
   display: -webkit-flex;
