@@ -1,0 +1,2414 @@
+<!DOCTYPE html>
+<!-- Оболочка документа -->
+<html lang="ru">
+
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+    <title>Новости</title>
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="js-body">
+    <!-- ОБОЛОЧКА -->
+    <div class="wrapper">
+<!-- шапка сайта -->
+<header class="header">
+    <div class="container">
+        <div class="header__row">
+            <div class="header__row--left">
+                <div class="header__logo">
+                    <!-- !на главной добавлять класс  no-pointer-->
+                    <a href="#" class="no-pointer">
+                        <img src="img/logo.png" class="logo-img logo-norm" alt="logo">
+                        <!-- !для темной темы разница в тоне цвета -->
+                        <img src="img/logo-black.png" class="logo-img logoimg-black" alt="logo">
+                    </a>
+                </div>
+                <div class="header__text-info">Сайт майнинг помощи для новичков и профессионалов</div>
+            </div>
+            <div class="header__dop-row">
+                <div class="header__search js-header-search">
+                    <form action="#" class="header__search--form js-fotm-search">
+                        <div class="header__search--row">
+                            <button type="submit" class="header__search--btn js-search-btn">
+                                <i class="icon-svg">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#search"></use>
+                                    </svg>
+                                </i>
+                            </button>
+                            <input type="text" class="style-text header__search--input js-input-search"
+                                placeholder="Поиск">
+                            <button class="header__search--close js-search-close">
+                                <i class="icon-svg">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#close"></use>
+                                    </svg>
+                                </i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="header__tongue">
+                    <div class="tongue js-tongue">
+                        <div class="tongue__flag js-flag-icon">
+                            <img src="img/icons/icon-flag-russia.png" alt="flag-russian">
+                        </div>
+                        <div class="tongue__countrys">
+                            <div class="tongue__countrys--country">
+                                <span class="js-tongue-country">Рус</span>
+                                <i class="icon-svg">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="tongue__countrys--fall-out js-countrys-fall">
+                                <ul class="tongue__countrys--list">
+                                    <li class="tongue__countrys--item js-item-countrys"
+                                        data-countrys-img="img/icons/icon-flag-russia.png">
+                                        <img src="img/icons/icon-flag-russia.png" alt="rus">
+                                        <span>Рус</span>
+                                    </li>
+                                    <li class="tongue__countrys--item js-item-countrys"
+                                        data-countrys-img="img/icons/icon-flag-ukraine.png">
+                                        <img src="img/icons/icon-flag-ukraine.png" alt="ua">
+                                        <span>Укр</span>
+                                    </li>
+                                    <li class="tongue__countrys--item js-item-countrys"
+                                        data-countrys-img="img/icons/icon-flag-usa.png">
+                                        <img src="img/icons/icon-flag-usa.png" alt="eng">
+                                        <span>Eng</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__switch">
+                    <div class="switch js-switch">
+                        <div class="switch__btn">
+                            <i class="switch__icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__autoho">
+                    <div class="header__autoho--row">
+                        <div class="header__autoho--user">
+                            <!-- !если пользователь авторизован и есть фото профиля то выводить картинку. Если фото то выводить иконку -->
+                            <!-- <img src="img/img-user.png" alt="user"> -->
+                            <i class="icon-svg iconsUser">
+                                <svg>
+                                    <use xlink:href="../img/svg/sprite.svg#user"></use>
+                                </svg>
+                            </i>
+                        </div>
+                        <div class="header__autoho--items">
+                            <a href="#" class="header__autoho--item">Вход</a>
+                            <a href="#" class="header__autoho--item">Регистрация</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-menu js-burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main-menu js-main-menu">
+    <div class="container">
+        <div class="main-menu__row">
+            <nav class="main-menu__nav">
+                <ul class="main-menu__list">
+                    <li class="main-menu__list--item js-main-item">
+                        <div class="main-menu__list--row">
+                            <a href="#" class="main-menu__link">
+                                <span>Новости</span>
+                                <i class="icon-svg">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                        </div>
+                        <ul class="sub-menu js-sub-menu">
+                            <li class="sub-menu__item js-main-item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Майнинг и криптовалюты</span>
+                                    <i class="icon-svg">
+                                        <svg>
+                                            <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                                <ul class="sub-menu sub-menu__sub js-sub-menu">
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Как начать майнить новичкам</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг на видеокарте GPU</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг и криптовалюты</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Сайт о майнинге</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu__item js-main-item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Оборудование</span>
+                                    <i class="icon-svg">
+                                        <svg>
+                                            <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                                <ul class="sub-menu sub-menu__sub js-sub-menu">
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Как начать майнить новичкам</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг на видеокарте GPU</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг и криптовалюты</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Сайт о майнинге</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Сайт о майнинге</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__list--item js-main-item">
+                        <div class="main-menu__list--row">
+                            <a href="#" class="main-menu__link">
+                                <span>Майнинг</span>
+                                <i class="icon-svg">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                        </div>
+                        <ul class="sub-menu js-sub-menu">
+                            <li class="sub-menu__item js-main-item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Майнинг и криптовалюты</span>
+                                    <i class="icon-svg">
+                                        <svg>
+                                            <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                                <ul class="sub-menu sub-menu__sub js-sub-menu">
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Как начать майнить новичкам</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг на видеокарте GPU</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг и криптовалюты</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Сайт о майнинге</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Оборудование</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Сайт о майнинге</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__list--item js-main-item">
+                        <div class="main-menu__list--row">
+                            <a href="#" class="main-menu__link">
+                                <span>Железо</span>
+                                <i class="icon-svg">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                        </div>
+                        <ul class="sub-menu js-sub-menu">
+                            <li class="sub-menu__item js-main-item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Майнинг и криптовалюты</span>
+                                    <i class="icon-svg">
+                                        <svg>
+                                            <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                                <ul class="sub-menu sub-menu__sub js-sub-menu">
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Как начать майнить новичкам</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг на видеокарте GPU</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг и криптовалюты</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Сайт о майнинге</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Оборудование</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Сайт о майнинге</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__list--item js-main-item">
+                        <div class="main-menu__list--row">
+                            <a href="#" class="main-menu__link">
+                                <span>Программы</span>
+                                <i class="icon-svg">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                        </div>
+                        <ul class="sub-menu js-sub-menu">
+                            <li class="sub-menu__item js-main-item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Майнинг и криптовалюты</span>
+                                    <i class="icon-svg">
+                                        <svg>
+                                            <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                                <ul class="sub-menu sub-menu__sub js-sub-menu">
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Как начать майнить новичкам</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг на видеокарте GPU</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг и криптовалюты</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Сайт о майнинге</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Оборудование</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Сайт о майнинге</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__list--item js-main-item">
+                        <div class="main-menu__list--row">
+                            <a href="#" class="main-menu__link">
+                                <span>Криптовалюта</span>
+                                <i class="icon-svg">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                        </div>
+                        <ul class="sub-menu js-sub-menu">
+                            <li class="sub-menu__item js-main-item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Майнинг и криптовалюты</span>
+                                    <i class="icon-svg">
+                                        <svg>
+                                            <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                                <ul class="sub-menu sub-menu__sub js-sub-menu">
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Как начать майнить новичкам</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг на видеокарте GPU</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг и криптовалюты</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Сайт о майнинге</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Оборудование</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Сайт о майнинге</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__list--item js-main-item">
+                        <div class="main-menu__list--row">
+                            <a href="#" class="main-menu__link">
+                                <span>Обменники</span>
+                                <i class="icon-svg">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                        </div>
+                        <ul class="sub-menu js-sub-menu">
+                            <li class="sub-menu__item js-main-item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Майнинг и криптовалюты</span>
+                                    <i class="icon-svg">
+                                        <svg>
+                                            <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                                <ul class="sub-menu sub-menu__sub js-sub-menu">
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Как начать майнить новичкам</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг на видеокарте GPU</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг и криптовалюты</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Сайт о майнинге</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Оборудование</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Сайт о майнинге</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- !доп. класс main-menu__poz-left -->
+                    <li class="main-menu__list--item main-menu__poz-left js-main-item">
+                        <div class="main-menu__list--row">
+                            <a href="#" class="main-menu__link">
+                                <span>FAQ</span>
+                                <i class="icon-svg">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                        </div>
+                        <ul class="sub-menu js-sub-menu">
+                            <li class="sub-menu__item js-main-item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Майнинг и криптовалюты</span>
+                                    <i class="icon-svg">
+                                        <svg>
+                                            <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                                <ul class="sub-menu sub-menu__sub js-sub-menu">
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Как начать майнить новичкам</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг на видеокарте GPU</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг и криптовалюты</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Сайт о майнинге</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Оборудование</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Сайт о майнинге</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__list--item">
+                        <div class="main-menu__list--row">
+                            <a href="#" class="main-menu__link">
+                                <span>Форум</span>
+                            </a>
+                        </div>
+                    </li>
+                    <!-- !доп. класс main-menu__poz-left -->
+                    <li class="main-menu__list--item main-menu__poz-left js-main-item">
+                        <div class="main-menu__list--row">
+                            <a href="#" class="main-menu__link">
+                                <span>О нас</span>
+                                <i class="icon-svg">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                        </div>
+                        <ul class="sub-menu js-sub-menu">
+                            <li class="sub-menu__item js-main-item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Майнинг и криптовалюты</span>
+                                    <i class="icon-svg">
+                                        <svg>
+                                            <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                                <ul class="sub-menu sub-menu__sub js-sub-menu">
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Как начать майнить новичкам</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг на видеокарте GPU</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Майнинг и криптовалюты</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">
+                                            <span>Сайт о майнинге</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Оборудование</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">
+                                    <span>Сайт о майнинге</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+        <div class="container">
+            <div class="page-row">
+                <div class="page-main">
+                    <div class="crumbs">
+                        <div class="crumbs__wr">
+                            <ul class="crumbs__list">
+                                <li>
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li>
+                                    <span>Новости</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h1 class="title-h1">«Как начать майнить»</h1>
+                    <div class="slider-tops">
+                        <div class="latest-news__slider latest-slider">
+                            <div class="latest-slider__slider js-new-slider">
+                                <div class="latest-slider__item js-latest-slider-item"
+                                    style="background-image: url(img/img-new-1.png);">
+                                    <div class="latest-slider__item--content">
+                                        <div class="latest-slider__has-htag">
+                                            <div class="has-htag has-htag__type-1"><span># Железо</span></div>
+                                            <div class="has-htag has-htag__type-1"><span>16 июля</span></div>
+                                        </div>
+                                        <div class="latest-slider__item--text">Адам Бэк: «биткоин может достичь $300 000
+                                            без
+                                            участия институциональных инвесторов»</div>
+                                    </div>
+                                    <a href="#" class="link-top"></a>
+                                </div>
+                                <div class="latest-slider__item js-latest-slider-item"
+                                    style="background-image: url(img/img-new-1.png);">
+                                    <div class="latest-slider__item--content">
+                                        <div class="latest-slider__has-htag">
+                                            <div class="has-htag has-htag__type-1"><span># Железо</span></div>
+                                            <div class="has-htag has-htag__type-1"><span>16 июля</span></div>
+                                        </div>
+                                        <div class="latest-slider__item--text">Адам: «биткоин может достичь $600 000 без
+                                            участия институциональных инвесторов»</div>
+                                    </div>
+                                    <a href="#" class="link-top"></a>
+                                </div>
+                                <div class="latest-slider__item js-latest-slider-item"
+                                    style="background-image: url(img/img-new-1.png);">
+                                    <div class="latest-slider__item--content">
+                                        <div class="latest-slider__has-htag">
+                                            <div class="has-htag has-htag__type-1"><span># Железо</span></div>
+                                            <div class="has-htag has-htag__type-1"><span>16 июля</span></div>
+                                        </div>
+                                        <div class="latest-slider__item--text">Адам: «биткоин может достичь $600 000 без
+                                            участия институциональных инвесторов»</div>
+                                    </div>
+                                    <a href="#" class="link-top"></a>
+                                </div>
+                                <div class="latest-slider__item js-latest-slider-item"
+                                    style="background-image: url(img/img-new-1.png);">
+                                    <div class="latest-slider__item--content">
+                                        <div class="latest-slider__has-htag">
+                                            <div class="has-htag has-htag__type-1"><span># Железо</span></div>
+                                            <div class="has-htag has-htag__type-1"><span>16 июля</span></div>
+                                        </div>
+                                        <div class="latest-slider__item--text">Адам: «биткоин может достичь $600 000 без
+                                            участия институциональных инвесторов»</div>
+                                    </div>
+                                    <a href="#" class="link-top"></a>
+                                </div>
+                            </div>
+                            <div class="latest-slider__arrows slider__wr-btn js-latest-slider-arrows">
+                                <button class="btn-slider btn-slider-prev js-btn-slider-prev">
+                                    <i class="icon-svg">
+                                        <svg>
+                                            <use xlink:href="../img/svg/sprite.svg#arrow_left"></use>
+                                        </svg>
+                                    </i>
+                                </button>
+                                <button class="btn-slider btn-slider-next js-btn-slider-next">
+                                    <i class="icon-svg">
+                                        <svg>
+                                            <use xlink:href="../img/svg/sprite.svg#arrow_right"></use>
+                                        </svg>
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="latest-slider__dots js-latest-slider-dots"></div>
+                        </div>
+                    </div>
+                    <div class="news__items">
+                        <h2 class="title-2">Топ-4 новости</h2>
+                        <div class="articles__item news_items">
+                            <div class="news_items--left">
+                                <div class="articles__item--img">
+                                    <a href="#">
+                                        <img src="img/article-img-1.png" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news_items--rigth">
+                                <div>
+                                    <div class="articles__item--hass wr-hass">
+                                        <div class="has-htag has-htag__type-2"><span># железо</span></div>
+                                    </div>
+                                    <a href="#" class="articles__item--link">T-Rex 0.15.4 - KawPow и PROGPOW</a>
+                                    <p class="articles__item--text">Так же вы узнаете реальные цифры сколько можно
+                                        заработать на майнинге. В общем удачи, учитесь, трудитесь и читайте статьи.
+                                        Личные
+                                        проверенные ...</p>
+                                </div>
+                                <div class="articles__item--bottom item-bottom">
+                                    <div class="item-bottom__item">
+                                        <i class="icon-svg icon-svg_time">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#time"></use>
+                                            </svg>
+                                        </i>
+                                        <span>12 июля в 14:33</span>
+                                    </div>
+                                    <div class="item-bottom__item">
+                                        <i class="icon-svg icon-svg_voice">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#voice"></use>
+                                            </svg>
+                                        </i>
+                                        <span>121</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles__item news_items">
+                            <div class="news_items--left">
+                                <div class="articles__item--img">
+                                    <a href="#">
+                                        <img src="img/img-none.png" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news_items--rigth">
+                                <div>
+                                    <div class="articles__item--hass wr-hass">
+                                        <div class="has-htag has-htag__type-2"><span># железо</span></div>
+                                    </div>
+                                    <a href="#" class="articles__item--link">T-Rex 0.15.4 - KawPow и PROGPOW</a>
+                                    <p class="articles__item--text">Так же вы узнаете реальные цифры сколько можно
+                                        заработать на майнинге. В общем удачи, учитесь, трудитесь и читайте статьи.
+                                        Личные
+                                        проверенные ...</p>
+                                </div>
+                                <div class="articles__item--bottom item-bottom">
+                                    <div class="item-bottom__item">
+                                        <i class="icon-svg icon-svg_time">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#time"></use>
+                                            </svg>
+                                        </i>
+                                        <span>12 июля в 14:33</span>
+                                    </div>
+                                    <div class="item-bottom__item">
+                                        <i class="icon-svg icon-svg_voice">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#voice"></use>
+                                            </svg>
+                                        </i>
+                                        <span>121</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles__item news_items">
+                            <div class="news_items--left">
+                                <div class="articles__item--img">
+                                    <a href="#">
+                                        <img src="img/article-img-3.png" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news_items--rigth">
+                                <div>
+                                    <div class="articles__item--hass wr-hass">
+                                        <div class="has-htag has-htag__type-2"><span># железо</span></div>
+                                    </div>
+                                    <a href="#" class="articles__item--link">T-Rex 0.15.4 - KawPow и PROGPOW</a>
+                                    <p class="articles__item--text">Так же вы узнаете реальные цифры сколько можно
+                                        заработать на майнинге. В общем удачи, учитесь, трудитесь и читайте статьи.
+                                        Личные
+                                        проверенные ...</p>
+                                </div>
+                                <div class="articles__item--bottom item-bottom">
+                                    <div class="item-bottom__item">
+                                        <i class="icon-svg icon-svg_time">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#time"></use>
+                                            </svg>
+                                        </i>
+                                        <span>12 июля в 14:33</span>
+                                    </div>
+                                    <div class="item-bottom__item">
+                                        <i class="icon-svg icon-svg_voice">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#voice"></use>
+                                            </svg>
+                                        </i>
+                                        <span>121</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles__item news_items">
+                            <div class="news_items--left">
+                                <div class="articles__item--img">
+                                    <a href="#">
+                                        <img src="img/article-img-5.png" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news_items--rigth">
+                                <div>
+                                    <div class="articles__item--hass wr-hass">
+                                        <div class="has-htag has-htag__type-2"><span># железо</span></div>
+                                    </div>
+                                    <a href="#" class="articles__item--link">T-Rex 0.15.4 - KawPow и PROGPOW</a>
+                                    <p class="articles__item--text">Так же вы узнаете реальные цифры сколько можно
+                                        заработать на майнинге. В общем удачи, учитесь, трудитесь и читайте статьи.
+                                        Личные
+                                        проверенные ...</p>
+                                </div>
+                                <div class="articles__item--bottom item-bottom">
+                                    <div class="item-bottom__item">
+                                        <i class="icon-svg icon-svg_time">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#time"></use>
+                                            </svg>
+                                        </i>
+                                        <span>12 июля в 14:33</span>
+                                    </div>
+                                    <div class="item-bottom__item">
+                                        <i class="icon-svg icon-svg_voice">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#voice"></use>
+                                            </svg>
+                                        </i>
+                                        <span>121</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__items news_others">
+                        <h2 class="title-2">Другие новости</h2>
+                        <div class="articles__item news_items">
+                            <div class="news_items--left">
+                                <div class="articles__item--img">
+                                    <a href="#">
+                                        <img src="img/article-img-1.png" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news_items--rigth">
+                                <div>
+                                    <div class="articles__item--hass wr-hass">
+                                        <div class="has-htag has-htag__type-2"><span># железо</span></div>
+                                    </div>
+                                    <a href="#" class="articles__item--link">T-Rex 0.15.4 - KawPow и PROGPOW</a>
+                                </div>
+                                <div class="articles__item--bottom item-bottom">
+                                    <div class="item-bottom__item">
+                                        <i class="icon-svg icon-svg_time">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#time"></use>
+                                            </svg>
+                                        </i>
+                                        <span>12 июля в 14:33</span>
+                                    </div>
+                                    <div class="item-bottom__item">
+                                        <i class="icon-svg icon-svg_voice">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#voice"></use>
+                                            </svg>
+                                        </i>
+                                        <span>121</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles__item news_items">
+                            <div class="news_items--left">
+                                <div class="articles__item--img">
+                                    <a href="#">
+                                        <img src="img/img-none.png" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news_items--rigth">
+                                <div>
+                                    <div class="articles__item--hass wr-hass">
+                                        <div class="has-htag has-htag__type-2"><span># железо</span></div>
+                                    </div>
+                                    <a href="#" class="articles__item--link">T-Rex 0.15.4 - KawPow и PROGPOW</a>
+                                </div>
+                                <div class="articles__item--bottom item-bottom">
+                                    <div class="item-bottom__item">
+                                        <i class="icon-svg icon-svg_time">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#time"></use>
+                                            </svg>
+                                        </i>
+                                        <span>12 июля в 14:33</span>
+                                    </div>
+                                    <div class="item-bottom__item">
+                                        <i class="icon-svg icon-svg_voice">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#voice"></use>
+                                            </svg>
+                                        </i>
+                                        <span>121</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles__item news_items">
+                            <div class="news_items--left">
+                                <div class="articles__item--img">
+                                    <a href="#">
+                                        <img src="img/article-img-3.png" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news_items--rigth">
+                                <div>
+                                    <div class="articles__item--hass wr-hass">
+                                        <div class="has-htag has-htag__type-2"><span># железо</span></div>
+                                    </div>
+                                    <a href="#" class="articles__item--link">T-Rex 0.15.4 - KawPow и PROGPOW</a>
+                                </div>
+                                <div class="articles__item--bottom item-bottom">
+                                    <div class="item-bottom__item">
+                                        <i class="icon-svg icon-svg_time">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#time"></use>
+                                            </svg>
+                                        </i>
+                                        <span>12 июля в 14:33</span>
+                                    </div>
+                                    <div class="item-bottom__item">
+                                        <i class="icon-svg icon-svg_voice">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#voice"></use>
+                                            </svg>
+                                        </i>
+                                        <span>121</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles__item news_items">
+                            <div class="news_items--left">
+                                <div class="articles__item--img">
+                                    <a href="#">
+                                        <img src="img/article-img-5.png" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news_items--rigth">
+                                <div>
+                                    <div class="articles__item--hass wr-hass">
+                                        <div class="has-htag has-htag__type-2"><span># железо</span></div>
+                                    </div>
+                                    <a href="#" class="articles__item--link">T-Rex 0.15.4 - KawPow и PROGPOW</a>
+                                </div>
+                                <div class="articles__item--bottom item-bottom">
+                                    <div class="item-bottom__item">
+                                        <i class="icon-svg icon-svg_time">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#time"></use>
+                                            </svg>
+                                        </i>
+                                        <span>12 июля в 14:33</span>
+                                    </div>
+                                    <div class="item-bottom__item">
+                                        <i class="icon-svg icon-svg_voice">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#voice"></use>
+                                            </svg>
+                                        </i>
+                                        <span>121</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wr-btn-center">
+                        <a href="#" class="btn-type-1 btn-type-4">
+                            <i class="icon-svg">
+                                <svg>
+                                    <use xlink:href="../img/svg/sprite.svg#loading"></use>
+                                </svg>
+                            </i>
+                            <span>Показать больше</span>
+                        </a>
+                    </div>
+                    <div class="pages__wr">
+                        <div class="pages">
+                            <ul class="pages__list">
+                                <li>
+                                    <a href="#" class="arrow-pages">
+                                        <i class="icon-svg">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#arrow-pag-prev"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pages__page active">1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pages__page">2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pages__page">3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pages__page">4</a>
+                                </li>
+                                <li>
+                                    <span class="pages__ellipsis">...</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="pages__page">7</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pages__page">8</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pages__page">9</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="arrow-pages">
+                                        <i class="icon-svg">
+                                            <svg>
+                                                <use xlink:href="../img/svg/sprite.svg#arrow-pag-next"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-aside">
+                    <div>
+                        <div class="page-aside__category">
+                            <h3 class="title-3">Категории</h3>
+                            <div class="categorys">
+                                <ul class="categorys__list">
+                                    <li class="js-lis">
+                                        <div class="categorys__list--top">
+                                            <a href="#">— Майнинг и криптовалюты</a>
+                                            <i class="icon-svg js-btn-subs">
+                                                <svg>
+                                                    <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                                </svg>
+                                            </i>
+                                        </div>
+                                        <ul class="categorys__list--sub js-categ-sub">
+                                            <li>
+                                                <div class="categorys__list--top">
+                                                    <a href="#">— Майнинг и криптовалюты</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="js-lis">
+                                        <div class="categorys__list--top">
+                                            <a href="#">— Оборудование</a>
+                                        </div>
+                                    </li>
+                                    <li class="js-lis">
+                                        <div class="categorys__list--top">
+                                            <a href="#"> — Сайт о майнинге</a>
+                                            <i class="icon-svg js-btn-subs">
+                                                <svg>
+                                                    <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                                </svg>
+                                            </i>
+                                        </div>
+                                        <ul class="categorys__list--sub js-categ-sub">
+                                            <li>
+                                                <div class="categorys__list--top">
+                                                    <a href="#">— Майнинг и криптовалюты</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="categorys__list--top">
+                                                    <a href="#">— Майнинг и криптовалюты</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="categorys__list--top">
+                                                    <a href="#">— Майнинг и криптовалюты</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page-aside__currency">
+                            <div class="course-currency">
+                                <h3 class="title-3">Курс валют</h3>
+                                <div class="course-currency__content js-course-currency">
+                                    <div class="course-currency__tabs">
+                                        <a href="#" class="course-currency__tab js-course-tab active-cur-tab"
+                                            data-tab="usd"><span>USD ($)</span></a>
+                                        <a href="#" class="course-currency__tab js-course-tab" data-tab="rub"><span>RUB
+                                                (₽)</span></a>
+                                        <a href="#" class="course-currency__tab js-course-tab" data-tab="eur"><span>EUR
+                                                (€)</span></a>
+                                        <a href="#" class="course-currency__tab js-course-tab" data-tab="btc"><span>BTC
+                                                (Ƀ)</span></a>
+                                    </div>
+                                    <div class="course-currency__items js-currency-type active" data-current="usd">
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-b.png" alt="icon">
+                                                <span>btc</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 9,101.82</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-2.png" alt="icon">
+                                                <span>eth</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 982</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-3.png" alt="icon">
+                                                <span>xmr</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 2.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_add"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-4.png" alt="icon">
+                                                <span>ltc</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 223.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-5.png" alt="icon">
+                                                <span>bch</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 23.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_add"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-6.png" alt="icon">
+                                                <span>zec</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 663.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_add"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-7.png" alt="icon">
+                                                <span>etc</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 523.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-8.png" alt="icon">
+                                                <span>rvn</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 213.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-9.png" alt="icon">
+                                                <span>xzc</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 22.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_add"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-10.png" alt="icon">
+                                                <span>grin</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 243.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                    </div>
+                                    <div class="course-currency__items js-currency-type" data-current="rub">
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-b.png" alt="icon">
+                                                <span>btc</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 101.82</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-2.png" alt="icon">
+                                                <span>eth</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 92</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-3.png" alt="icon">
+                                                <span>xmr</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 723.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_add"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-4.png" alt="icon">
+                                                <span>ltc</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 223.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-5.png" alt="icon">
+                                                <span>bch</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 23.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_add"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-6.png" alt="icon">
+                                                <span>zec</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 663.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_add"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-7.png" alt="icon">
+                                                <span>etc</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 523.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-8.png" alt="icon">
+                                                <span>rvn</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 213.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-9.png" alt="icon">
+                                                <span>xzc</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 22.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_add"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-10.png" alt="icon">
+                                                <span>grin</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 243.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                    </div>
+                                    <div class="course-currency__items js-currency-type" data-current="eur">
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-b.png" alt="icon">
+                                                <span>btc</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 9,101.82</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-2.png" alt="icon">
+                                                <span>eth</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 82</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-3.png" alt="icon">
+                                                <span>xmr</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 23.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_add"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-4.png" alt="icon">
+                                                <span>ltc</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 23.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-5.png" alt="icon">
+                                                <span>bch</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 23.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_add"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-6.png" alt="icon">
+                                                <span>zec</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 663.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_add"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-7.png" alt="icon">
+                                                <span>etc</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 523.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-8.png" alt="icon">
+                                                <span>rvn</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 213.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-9.png" alt="icon">
+                                                <span>xzc</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 22.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_add"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-10.png" alt="icon">
+                                                <span>grin</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 243.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                    </div>
+                                    <div class="course-currency__items js-currency-type" data-current="btc">
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-b.png" alt="icon">
+                                                <span>btc</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 11,101.82</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-2.png" alt="icon">
+                                                <span>eth</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 182</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-3.png" alt="icon">
+                                                <span>xmr</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 723.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_add"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-4.png" alt="icon">
+                                                <span>ltc</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 723.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-5.png" alt="icon">
+                                                <span>bch</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 26.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_add"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-6.png" alt="icon">
+                                                <span>zec</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 663.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_add"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-7.png" alt="icon">
+                                                <span>etc</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 523.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-8.png" alt="icon">
+                                                <span>rvn</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 213.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-9.png" alt="icon">
+                                                <span>xzc</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 22.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_add"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                        <div class="course-currency__item">
+                                            <div class="course-currency__item--cur">
+                                                <img src="img/icons/icon-cur-10.png" alt="icon">
+                                                <span>grin</span>
+                                            </div>
+                                            <div class="course-currency__item--status">
+                                                <span><span>$ 243.70</span> (-1.50%)</span>
+                                                <i class="icon-svg">
+                                                    <svg>
+                                                        <use xlink:href="../img/svg/sprite.svg#arrow_min"></use>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <a href="#" class="course-currency__item--link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-online">
+                            <h3 class="title-3">Майнеры онлайн</h3>
+                            <div class="online">
+                                <div class="online__items">
+                                    <div class="online__item" title="name">
+                                        <img src="img/user-online-1.png" alt="img">
+                                        <span class="online-active"></span>
+                                    </div>
+                                    <div class="online__item" title="name">
+                                        <img src="img/user-online-2.png" alt="img">
+                                        <span class="online-active"></span>
+                                    </div>
+                                    <div class="online__item" title="name">
+                                        <img src="img/user-online-3.png" alt="img">
+                                        <span class="online-active"></span>
+                                    </div>
+                                    <div class="online__item" title="name">
+                                        <img src="img/user-online-4.png" alt="img">
+                                        <span class="online-active"></span>
+                                    </div>
+                                    <div class="online__item" title="name">
+                                        <img src="img/user-online-5.png" alt="img">
+                                        <span class="online-active"></span>
+                                    </div>
+                                    <div class="online__item" title="name">
+                                        <img src="img/no-user.png" alt="img">
+                                        <span class="online-active"></span>
+                                    </div>
+                                    <div class="online__item" title="name">
+                                        <img src="img/user-online-7.png" alt="img">
+                                        <span class="online-active"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-aside__subscription">
+                        <div class="subscription">
+                            <div class="subscription__img">
+                                <img src="img/img-email.png" alt="img">
+                            </div>
+                            <div class="subscription__title">Будь вкурсе!</div>
+                            <p class="subscription__text">Обещаем только интересные статьи! Мы сами не любим спам :)
+                            </p>
+                            <div class="subscription__wr-form">
+                                <form action="#">
+                                    <div class="subscription__form-row">
+                                        <input type="text" class="subscription__input" placeholder="Введите почту">
+                                        <button type="submit" class="subscription__btn">
+                                            <i class="icon-svg">
+                                                <svg>
+                                                    <use xlink:href="../img/svg/sprite.svg#telegram"></use>
+                                                </svg>
+                                            </i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- подвал сайта -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__items">
+            <div class="footer__item footer__item--bg">
+                <div class="logo-footer js-fot-btn">
+                        <img src="img/footer-logo.png" alt="img">
+                </div>
+                <p class="footer__item--text">© Mining-help.ru, 2017 - 2020.</p>
+            </div>
+            <div class="footer__item">
+                <div class="footer__item--title">
+                    <span>Новости</span>
+                    <i class="icon-svg">
+                        <svg>
+                            <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                        </svg>
+                    </i>
+                </div>
+                <ul class="footer__item--list">
+                    <li><a href="#">Майнинг и криптовалюта</a></li>
+                    <li><a href="#">Железо (оборудование)</a></li>
+                    <li><a href="#">Сайт о майнинге</a></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <div class="footer__item--title">
+                    <span>Криптовалюта</span>
+                    <i class="icon-svg">
+                        <svg>
+                            <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                        </svg>
+                    </i>
+                </div>
+                <ul class="footer__item--list">
+                    <li><a href="#">Купить криптовалюту</a></li>
+                    <li><a href="#">Как получить криптовалюту</a></li>
+                    <li><a href="#">Криптовалютный кошелек</a></li>
+                    <li><a href="#">Что это такое? Описание монет</a></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <div class="footer__item--title">
+                    <span>Программы</span>
+                    <i class="icon-svg">
+                        <svg>
+                            <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                        </svg>
+                    </i>
+                </div>
+                <ul class="footer__item--list">
+                    <li><a href="#">Программы майнинга</a></li>
+                    <li><a href="#">Майнеры</a></li>
+                    <li><a href="#">Драйвера</a></li>
+                    <li><a href="#">Операционные системы</a></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <div class="footer__item--title">
+                    <span>Железо</span>
+                    <i class="icon-svg">
+                        <svg>
+                            <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                        </svg>
+                    </i>
+                </div>
+                <ul class="footer__item--list">
+                    <li><a href="#">Видеокарты</a></li>
+                    <li><a href="#">Блок питания</a></li>
+                    <li><a href="#">Материнские платы</a></li>
+                    <li><a href="#">Процессор, оперативна</a></li>
+                    <li><a href="#">Жесткий диск, флешка</a></li>
+                    <li><a href="#">Рейзеры, молексы и др.</a></li>
+                    <li><a href="#">Ферма майнинга</a></li>
+                    <li><a href="#">Интернет</a></li>
+                    <li><a href="#">Асик майнеры</a></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <div class="footer__item--title">
+                    <span>Майнинг</span>
+                    <i class="icon-svg">
+                        <svg>
+                            <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                        </svg>
+                    </i>
+                </div>
+                <ul class="footer__item--list">
+                    <li><a href="#">Как начать майнить новичкам</a></li>
+                    <li><a href="#">Майнинг на видеокарте GPU</a></li>
+                    <li><a href="#">Облачный майнинг</a></li>
+                    <li><a href="#">Пулы</a></li>
+                    <li><a href="#">Асин майнинг</a></li>
+                    <li><a href="#">Майнинг на процессоре CPU</a></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <div class="footer__item--title">
+                    <span>fAQ</span>
+                    <i class="icon-svg">
+                        <svg>
+                            <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                        </svg>
+                    </i>
+                </div>
+                <ul class="footer__item--list">
+                    <li><a href="#">Прошивка GPU</a></li>
+                    <li><a href="#">Перевод-вывод денег</a></li>
+                    <li><a href="#">Настройки майн</a></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <div class="footer__item--title">
+                    <span>Другое</span>
+                    <i class="icon-svg">
+                        <svg>
+                            <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                        </svg>
+                    </i>
+                </div>
+                <ul class="footer__item--list">
+                    <li><a href="#">Форум</a></li>
+                    <li><a href="#">Обменники</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__switch">
+            <div class="switch js-switch">
+                <div class="switch__btn">
+                    <i class="switch__icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>    </div>
+
+ <!-- попап -->
+    <div class="popup js-popup" data-id-popup="popup-0">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <span class="popup__close js-popup__close"></span>
+            <div class="popup_container">
+                <h2>Попап</h2>
+            </div>
+        </div>
+    </div>
+<!-- кнопка прокрутки вверх -->
+<div class="scroll-up js-scroll-up">
+    <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+        <path class="scroll-up__path js-scroll-up__path" d="M24,0 a24,24 0 0,1 0,48 a24,24 0 0,1 0,-48" />
+    </svg>
+</div>
+
+<!-- мобильное меню -->
+<div class="mobile-menu js-mobile-menu">
+    <div class="mobile-menu__content">
+        <div class="mobile-menu__close">
+            <button class="close-menu js-close-menu">
+                <i class="icon-svg">
+                    <svg>
+                        <use xlink:href="../img/svg/sprite.svg#close"></use>
+                    </svg>
+                </i>
+            </button>
+        </div>
+        <div class="mobile-menu__menu js-menu-content">
+            <ul class="menu-mobile">
+                <li class="menu-mobile-li js-wr-li">
+                    <div class="menu-mobile__top">
+                        <a href="#" class="menu-mobile--link">Новости</a>
+                        <i class="icon-svg js-btn-sub">
+                            <svg>
+                                <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                            </svg>
+                        </i>
+                    </div>
+                    <ul class="menu-mobile__sub js-mob-sub">
+                        <li class="menu-mobile-li js-wr-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Как начать майнить новичкам</a>
+                                <i class="icon-svg js-btn-sub">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                    </svg>
+                                </i>
+                            </div>
+                            <ul class="menu-mobile__sub js-mob-sub">
+                                <li class="menu-mobile-li js-wr-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Как начать майнить новичкам</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Майнинг на видеокарте GPU</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Майнинг и криптовалюты</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Сайт о майнинге</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Майнинг на видеокарте GPU</a>
+                            </div>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Майнинг и криптовалюты</a>
+                            </div>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Сайт о майнинге</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-mobile-li js-wr-li">
+                    <div class="menu-mobile__top">
+                        <a href="#" class="menu-mobile--link">Майнинг</a>
+                        <i class="icon-svg js-btn-sub">
+                            <svg>
+                                <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                            </svg>
+                        </i>
+                    </div>
+                    <ul class="menu-mobile__sub js-mob-sub">
+                        <li class="menu-mobile-li js-wr-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Как начать майнить новичкам</a>
+                                <i class="icon-svg js-btn-sub">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                    </svg>
+                                </i>
+                            </div>
+                            <ul class="menu-mobile__sub js-mob-sub">
+                                <li class="menu-mobile-li js-wr-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Как начать майнить новичкам</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Майнинг на видеокарте GPU</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Майнинг и криптовалюты</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Сайт о майнинге</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Майнинг на видеокарте GPU</a>
+                            </div>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Майнинг и криптовалюты</a>
+                            </div>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Сайт о майнинге</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-mobile-li js-wr-li">
+                    <div class="menu-mobile__top">
+                        <a href="#" class="menu-mobile--link">Железо</a>
+                        <i class="icon-svg js-btn-sub">
+                            <svg>
+                                <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                            </svg>
+                        </i>
+                    </div>
+                    <ul class="menu-mobile__sub js-mob-sub">
+                        <li class="menu-mobile-li js-wr-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Как начать майнить новичкам</a>
+                                <i class="icon-svg js-btn-sub">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                    </svg>
+                                </i>
+                            </div>
+                            <ul class="menu-mobile__sub js-mob-sub">
+                                <li class="menu-mobile-li js-wr-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Как начать майнить новичкам</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Майнинг на видеокарте GPU</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Майнинг и криптовалюты</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Сайт о майнинге</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Майнинг на видеокарте GPU</a>
+                            </div>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Майнинг и криптовалюты</a>
+                            </div>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Сайт о майнинге</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-mobile-li js-wr-li">
+                    <div class="menu-mobile__top">
+                        <a href="#" class="menu-mobile--link">Программы</a>
+                        <i class="icon-svg js-btn-sub">
+                            <svg>
+                                <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                            </svg>
+                        </i>
+                    </div>
+                    <ul class="menu-mobile__sub js-mob-sub">
+                        <li class="menu-mobile-li js-wr-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Как начать майнить новичкам</a>
+                                <i class="icon-svg js-btn-sub">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                    </svg>
+                                </i>
+                            </div>
+                            <ul class="menu-mobile__sub js-mob-sub">
+                                <li class="menu-mobile-li js-wr-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Как начать майнить новичкам</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Майнинг на видеокарте GPU</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Майнинг и криптовалюты</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Сайт о майнинге</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Майнинг на видеокарте GPU</a>
+                            </div>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Майнинг и криптовалюты</a>
+                            </div>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Сайт о майнинге</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-mobile-li js-wr-li">
+                    <div class="menu-mobile__top">
+                        <a href="#" class="menu-mobile--link">Криптовалюта</a>
+                        <i class="icon-svg js-btn-sub">
+                            <svg>
+                                <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                            </svg>
+                        </i>
+                    </div>
+                    <ul class="menu-mobile__sub js-mob-sub">
+                        <li class="menu-mobile-li js-wr-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Как начать майнить новичкам</a>
+                                <i class="icon-svg js-btn-sub">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                    </svg>
+                                </i>
+                            </div>
+                            <ul class="menu-mobile__sub js-mob-sub">
+                                <li class="menu-mobile-li js-wr-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Как начать майнить новичкам</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Майнинг на видеокарте GPU</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Майнинг и криптовалюты</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Сайт о майнинге</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Майнинг на видеокарте GPU</a>
+                            </div>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Майнинг и криптовалюты</a>
+                            </div>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Сайт о майнинге</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-mobile-li js-wr-li">
+                    <div class="menu-mobile__top">
+                        <a href="#" class="menu-mobile--link">Обменники</a>
+                        <i class="icon-svg js-btn-sub">
+                            <svg>
+                                <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                            </svg>
+                        </i>
+                    </div>
+                    <ul class="menu-mobile__sub js-mob-sub">
+                        <li class="menu-mobile-li js-wr-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Как начать майнить новичкам</a>
+                                <i class="icon-svg js-btn-sub">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                    </svg>
+                                </i>
+                            </div>
+                            <ul class="menu-mobile__sub js-mob-sub">
+                                <li class="menu-mobile-li js-wr-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Как начать майнить новичкам</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Майнинг на видеокарте GPU</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Майнинг и криптовалюты</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Сайт о майнинге</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Майнинг на видеокарте GPU</a>
+                            </div>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Майнинг и криптовалюты</a>
+                            </div>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Сайт о майнинге</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-mobile-li js-wr-li">
+                    <div class="menu-mobile__top">
+                        <a href="#" class="menu-mobile--link">FAQ</a>
+                    </div>
+                </li>
+                <li class="menu-mobile-li js-wr-li">
+                    <div class="menu-mobile__top">
+                        <a href="#" class="menu-mobile--link">О нас</a>
+                        <i class="icon-svg js-btn-sub">
+                            <svg>
+                                <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                            </svg>
+                        </i>
+                    </div>
+                    <ul class="menu-mobile__sub js-mob-sub">
+                        <li class="menu-mobile-li js-wr-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Как начать майнить новичкам</a>
+                                <i class="icon-svg js-btn-sub">
+                                    <svg>
+                                        <use xlink:href="../img/svg/sprite.svg#triangle"></use>
+                                    </svg>
+                                </i>
+                            </div>
+                            <ul class="menu-mobile__sub js-mob-sub">
+                                <li class="menu-mobile-li js-wr-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Как начать майнить новичкам</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Майнинг на видеокарте GPU</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Майнинг и криптовалюты</a>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-li">
+                                    <div class="menu-mobile__top">
+                                        <a href="#">Сайт о майнинге</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Майнинг на видеокарте GPU</a>
+                            </div>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Майнинг и криптовалюты</a>
+                            </div>
+                        </li>
+                        <li class="menu-mobile-li">
+                            <div class="menu-mobile__top">
+                                <a href="#">Сайт о майнинге</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- прелоадер -->
+<div class="preloader  js-preloader"></div>
+
+<!-- Подключеине скриптов -->
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/slick-1.8.1/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

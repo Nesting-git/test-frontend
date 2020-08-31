@@ -404,6 +404,24 @@ $(document).ready(function () {
         }
     });
 
+
+    /*боковые категории*/
+    const $btnCat = $('.js-btn-subs');
+
+    $btnCat.click(function () {
+        const $ths = $(this);
+        const $find = $ths.closest('.js-lis').find('.js-categ-sub');
+
+        if (!$ths.hasClass('active')) {
+            $ths.addClass('active');
+            $find.slideDown(300);
+        } else {
+            $ths.removeClass('active');
+            $find.slideUp(300);
+        }
+    });
+
+
     /*общее событие прокрутки + событи изменение ширины*/
     $(window).on('scroll resize load', function () {
         let scrolls = $(this).scrollTop();
